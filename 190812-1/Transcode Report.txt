@@ -1,0 +1,118 @@
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\copper_top.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+D13   --> D103
+D14   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\profile.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D105
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\silkscreen_top.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D106
+D11   --> D107
+D12   --> D108
+D13   --> D109
+D14   --> D110
+D15   --> D111
+D16   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\soldermask_bottom.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D113
+D11   --> D114
+D12   --> D115
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\soldermask_top.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D116
+D11   --> D117
+D12   --> D118
+D13   --> D119
+D14   --> D120
+D15   --> D121
+D16   --> D122
+D17   --> D123
+D18   --> D124
+D19   --> D125
+D20   --> D126
+D21   --> D127
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-1_2019-08-12_importZIP\solderpaste_top.gbr' ----   Mon Aug 12 12:31:52 2019
+
+D10   --> D128
+D11   --> D129
+D12   --> D130
+D13   --> D131
+D14   --> D132
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-2_2019-08-12_importZIP\copper_top.gbr' ----   Mon Aug 12 14:41:33 2019
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+D13   --> D103
+D14   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-2_2019-08-12_importZIP\silkscreen_top.gbr' ----   Mon Aug 12 14:41:33 2019
+
+D10   --> D105
+D11   --> D106
+D12   --> D107
+D13   --> D108
+D14   --> D109
+D15   --> D110
+D16   --> D111
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-2_2019-08-12_importZIP\soldermask_bottom.gbr' ----   Mon Aug 12 14:41:33 2019
+
+D10   --> D112
+D11   --> D113
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-2_2019-08-12_importZIP\soldermask_top.gbr' ----   Mon Aug 12 14:41:33 2019
+
+D10   --> D114
+D11   --> D115
+D12   --> D116
+D13   --> D117
+D14   --> D118
+D15   --> D119
+D16   --> D120
+D17   --> D121
+D18   --> D122
+D19   --> D123
+D20   --> D124
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\Rob\AppData\Local\Temp\190812-2_2019-08-12_importZIP\solderpaste_top.gbr' ----   Mon Aug 12 14:41:33 2019
+
+D10   --> D125
+D11   --> D126
+D12   --> D127
+D13   --> D128
+D14   --> D129
+-----------------------------------------------------------------
