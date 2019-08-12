@@ -1,0 +1,2 @@
+<b>FSR tester for the trigger project</b><br>
+This design uses an Espruino to log data from an FSR using the same circuit as the final trigger.  
