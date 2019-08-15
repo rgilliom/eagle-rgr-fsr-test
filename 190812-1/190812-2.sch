@@ -8408,6 +8408,102 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="pwr-symbols-rmg" urn="urn:adsk.eagle:library:1326622">
+<packages>
+</packages>
+<symbols>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:1326626/1" library_version="13">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V3A" urn="urn:adsk.eagle:symbol:12431003/1" library_version="13">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GNDA" urn="urn:adsk.eagle:symbol:1333168/1" library_version="13">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="GNDA" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:1326629/2" prefix="+3V3" library_version="13">
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3A" urn="urn:adsk.eagle:component:12431004/1" prefix="+3V3A" library_version="13">
+<gates>
+<gate name="G$1" symbol="+3V3A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDA" urn="urn:adsk.eagle:component:1333169/2" prefix="GNDA" library_version="13">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GNDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8437,6 +8533,19 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="H2" library="connectors-rmg" library_urn="urn:adsk.eagle:library:1326616" deviceset="FSR-CONNECTOR-RUGER" device="" package3d_urn="urn:adsk.eagle:package:1328949/2"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10R"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V1" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3" device=""/>
+<part name="+3V3A1" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
+<part name="GNDA1" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GNDA2" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
+<part name="GNDA3" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
+<part name="GNDA4" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
+<part name="GNDA5" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
+<part name="+3V3A2" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
+<part name="+3V3A3" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
+<part name="+3V3A4" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8521,36 +8630,49 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <attribute name="NAME" x="158.75" y="98.0186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="158.75" y="93.218" size="1.778" layer="96"/>
 </instance>
+<instance part="GND1" gate="1" x="86.36" y="121.92" smashed="yes">
+<attribute name="VALUE" x="83.82" y="119.38" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="91.44" y="114.3" smashed="yes">
+<attribute name="VALUE" x="88.9" y="109.22" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V3A1" gate="G$1" x="152.4" y="116.84" smashed="yes">
+<attribute name="VALUE" x="149.86" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GNDA1" gate="1" x="142.24" y="91.44" smashed="yes">
+<attribute name="VALUE" x="139.7" y="88.9" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND2" gate="1" x="170.18" y="91.44" smashed="yes">
+<attribute name="VALUE" x="167.64" y="88.9" size="1.778" layer="96"/>
+</instance>
+<instance part="GNDA2" gate="1" x="223.52" y="116.84" smashed="yes">
+<attribute name="VALUE" x="220.98" y="114.3" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GNDA3" gate="1" x="251.46" y="96.52" smashed="yes">
+<attribute name="VALUE" x="248.92" y="93.98" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GNDA4" gate="1" x="266.7" y="157.48" smashed="yes">
+<attribute name="VALUE" x="264.16" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GNDA5" gate="1" x="241.3" y="132.08" smashed="yes">
+<attribute name="VALUE" x="238.76" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V3A2" gate="G$1" x="231.14" y="162.56" smashed="yes">
+<attribute name="VALUE" x="228.6" y="157.48" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V3A3" gate="G$1" x="241.3" y="162.56" smashed="yes">
+<attribute name="VALUE" x="238.76" y="157.48" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V3A4" gate="G$1" x="266.7" y="182.88" smashed="yes">
+<attribute name="VALUE" x="264.16" y="177.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="302.26" y="114.3" smashed="yes">
+<attribute name="VALUE" x="299.72" y="111.76" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND1" class="0">
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="91.44" y1="127" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="170.18" y1="93.98" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+3V1" class="0">
-<segment>
-<wire x1="96.52" y1="127" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="109.22" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="3.3V"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<junction x="96.52" y="109.22"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -8618,61 +8740,7 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 </net>
 <net name="GNDA1" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="134.62" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="119.38" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="H2" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="RV2" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="99.06" x2="251.46" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="99.06" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="99.06" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<junction x="142.24" y="96.52"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<junction x="149.86" y="96.52"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="V-"/>
-</segment>
-</net>
-<net name="+3V3A1" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="266.7" y1="177.8" x2="266.7" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="160.02" x2="241.3" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="157.48" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="109.22" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="109.22" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
-<junction x="142.24" y="109.22"/>
-<wire x1="149.86" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="109.22" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
-<junction x="149.86" y="109.22"/>
 </segment>
 </net>
 <net name="VREF" class="0">
@@ -8691,6 +8759,102 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <wire x1="254" y1="142.24" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="139.7" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<wire x1="91.44" y1="127" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="93.98" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<wire x1="96.52" y1="127" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="109.22" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="3.3V"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<junction x="96.52" y="109.22"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
+</net>
+<net name="+3V3A" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="109.22" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="109.22" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<junction x="142.24" y="109.22"/>
+<wire x1="149.86" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="109.22" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
+<junction x="149.86" y="109.22"/>
+<pinref part="+3V3A1" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="157.48" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="+3V3A2" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="160.02" x2="241.3" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="+3V3A3" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="266.7" y1="177.8" x2="266.7" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="+3V3A4" gate="G$1" pin="+3V3A"/>
+</segment>
+</net>
+<net name="GNDA" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="99.06" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="99.06" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
+<junction x="142.24" y="96.52"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<junction x="149.86" y="96.52"/>
+<pinref part="GNDA1" gate="1" pin="GNDA"/>
+<wire x1="142.24" y1="96.52" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="223.52" y1="119.38" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="H2" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GNDA2" gate="1" pin="GNDA"/>
+</segment>
+<segment>
+<pinref part="RV2" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="99.06" x2="251.46" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="GNDA3" gate="1" pin="GNDA"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GNDA4" gate="1" pin="GNDA"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="134.62" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="GNDA5" gate="1" pin="GNDA"/>
 </segment>
 </net>
 </nets>

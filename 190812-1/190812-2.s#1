@@ -8441,6 +8441,7 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <sheets>
 <sheet>
 <plain>
+<text x="302.26" y="25.4" size="5.08" layer="94">FSR Espruino Test Circuit</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
