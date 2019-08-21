@@ -8546,6 +8546,7 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <part name="+3V3A3" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
 <part name="+3V3A4" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="+3V3A" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GNDA6" library="pwr-symbols-rmg" library_urn="urn:adsk.eagle:library:1326622" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8669,6 +8670,9 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <instance part="GND3" gate="1" x="302.26" y="114.3" smashed="yes">
 <attribute name="VALUE" x="299.72" y="111.76" size="1.778" layer="96"/>
 </instance>
+<instance part="GNDA6" gate="1" x="259.08" y="132.08" smashed="yes">
+<attribute name="VALUE" x="256.54" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8736,11 +8740,6 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <pinref part="U2" gate="G$1" pin="A0"/>
 <wire x1="124.46" y1="142.24" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
 <label x="149.86" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GNDA1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="V-"/>
 </segment>
 </net>
 <net name="VREF" class="0">
@@ -8855,6 +8854,11 @@ This is simply a 0.1" pin header connection. (2 positions).</description>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="134.62" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GNDA5" gate="1" pin="GNDA"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="V-"/>
+<pinref part="GNDA6" gate="1" pin="GNDA"/>
+<wire x1="259.08" y1="134.62" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

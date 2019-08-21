@@ -156,15 +156,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="45" y2="0" width="0" layer="20"/>
 <wire x1="45" y1="0" x2="45" y2="29" width="0" layer="20"/>
 <wire x1="45" y1="29" x2="0" y2="29" width="0" layer="20"/>
 <wire x1="0" y1="29" x2="0" y2="0" width="0" layer="20"/>
-<text x="43.8" y="26.45" size="1.4" layer="16" ratio="14" rot="MR0">190812-1</text>
+<text x="43.8" y="26.45" size="1.4" layer="16" ratio="14" rot="MR0">190812-2</text>
 <text x="43.9" y="24.1" size="1.4" layer="16" ratio="14" rot="MR0">2019</text>
 </plain>
 <libraries>
